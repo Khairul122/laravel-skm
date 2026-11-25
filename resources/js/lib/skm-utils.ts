@@ -179,3 +179,31 @@ export const PERMENPAN_9_ELEMENTS_REFERENCE = [
         question: 'Bagaimana pendapat Saudara tentang kualitas sarana dan prasarana?',
     },
 ];
+
+export type ElementRatingScore = 1 | 2 | 3 | 4;
+
+export const PERMENPAN_ELEMENT_SCALE_LABELS: Record<string, Record<ElementRatingScore, string>> = {
+    U1: { 1: 'Tidak Sesuai', 2: 'Kurang Sesuai', 3: 'Sesuai', 4: 'Sangat Sesuai' },
+    U2: { 1: 'Tidak Mudah', 2: 'Kurang Mudah', 3: 'Mudah', 4: 'Sangat Mudah' },
+    U3: { 1: 'Tidak Cepat', 2: 'Kurang Cepat', 3: 'Cepat', 4: 'Sangat Cepat' },
+    U4: { 1: 'Sangat Mahal', 2: 'Cukup Mahal', 3: 'Murah', 4: 'Gratis / Sangat Wajar' },
+    U5: { 1: 'Tidak Sesuai', 2: 'Kurang Sesuai', 3: 'Sesuai', 4: 'Sangat Sesuai' },
+    U6: { 1: 'Tidak Kompeten', 2: 'Kurang Kompeten', 3: 'Kompeten', 4: 'Sangat Kompeten' },
+    U7: { 1: 'Tidak Sopan', 2: 'Kurang Sopan', 3: 'Sopan & Ramah', 4: 'Sangat Sopan & Ramah' },
+    U8: { 1: 'Tidak Ada', 2: 'Ada, Tidak Berfungsi', 3: 'Berfungsi Kurang Maksimal', 4: 'Dikelola dengan Baik' },
+    U9: { 1: 'Buruk', 2: 'Cukup', 3: 'Baik', 4: 'Sangat Baik' },
+};
+
+export function getElementScaleLabel(code: string, score: ElementRatingScore): string {
+    const custom = PERMENPAN_ELEMENT_SCALE_LABELS[code];
+    if (custom) {
+        return custom[score];
+    }
+
+    return {
+        1: 'Tidak Baik',
+        2: 'Kurang Baik',
+        3: 'Baik',
+        4: 'Sangat Baik',
+    }[score];
+}

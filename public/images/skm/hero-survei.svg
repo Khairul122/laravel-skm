@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600" role="img" aria-labelledby="t">
+  <title id="t">Ilustrasi tangan memegang ponsel berisi formulir survei kepuasan</title>
+  <defs>
+    <linearGradient id="phoneEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B7A55"/>
+      <stop offset="1" stop-color="#0B3D2E"/>
+    </linearGradient>
+    <linearGradient id="blob" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E3F5EA"/>
+      <stop offset="1" stop-color="#C6EBD6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- latar blob -->
+  <path d="M330 70c130 0 240 80 250 200 10 130-90 240-230 250-140 10-250-70-262-190C76 200 190 70 330 70z" fill="url(#blob)"/>
+  <circle cx="540" cy="120" r="10" fill="#F5B83D"/>
+  <circle cx="92" cy="430" r="7" fill="#1B7A55" opacity=".5"/>
+
+  <!-- pesawat kertas -->
+  <g fill="#FFFFFF" stroke="#1B7A55" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M128 142l86 22-58 14z"/>
+    <path d="M156 178l58-14-38 34z" fill="#D7F0E3"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#1B7A55" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M532 400l-78 34 50-2z"/>
+    <path d="M504 432l-50 2 40 26z" fill="#D7F0E3"/>
+  </g>
+
+  <!-- gelembung pesan kiri -->
+  <g>
+    <rect x="70" y="318" width="150" height="82" rx="14" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+    <path d="M110 400l-6 22 26-22z" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="88" y="338" width="62" height="9" rx="4.5" fill="#1B7A55" opacity=".85"/>
+    <rect x="88" y="356" width="112" height="7" rx="3.5" fill="#B7DCC8"/>
+    <rect x="88" y="371" width="92" height="7" rx="3.5" fill="#B7DCC8"/>
+  </g>
+
+  <!-- gelembung pesan kanan -->
+  <g transform="translate(14 -78)">
+    <rect x="452" y="196" width="138" height="70" rx="14" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+    <path d="M556 266l10 20 4-20z" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2" stroke-linejoin="round"/>
+    <g fill="#F5B83D">
+      <path d="M476 222l4.5 9 10 1.4-7.2 7 1.7 10-9-4.7-9 4.7 1.7-10-7.2-7 10-1.4z"/>
+      <path d="M506 222l4.5 9 10 1.4-7.2 7 1.7 10-9-4.7-9 4.7 1.7-10-7.2-7 10-1.4z"/>
+      <path d="M536 222l4.5 9 10 1.4-7.2 7 1.7 10-9-4.7-9 4.7 1.7-10-7.2-7 10-1.4z"/>
+    </g>
+    <path d="M566 222l4.5 9 10 1.4-7.2 7 1.7 10-9-4.7-9 4.7 1.7-10-7.2-7 10-1.4z" fill="#E6EFE9"/>
+  </g>
+
+  <!-- tangan: telapak di belakang ponsel -->
+  <path d="M232 600c-6-70 4-140 30-190l118-30c40 10 66 50 70 110 4 46-4 80-18 110z" fill="#E9A37B"/>
+  <path d="M262 410c-30 50-38 120-30 190h40c-6-70 6-136 30-176z" fill="#D98C63" opacity=".55"/>
+
+  <!-- ponsel -->
+  <g transform="rotate(-7 340 290)">
+    <rect x="236" y="74" width="214" height="420" rx="34" fill="url(#phoneEdge)"/>
+    <rect x="248" y="88" width="190" height="392" rx="24" fill="#F4FBF7"/>
+    <rect x="310" y="96" width="66" height="14" rx="7" fill="#0B3D2E"/>
+
+    <!-- kepala formulir -->
+    <circle cx="343" cy="158" r="30" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+    <g transform="translate(325 140) scale(.75)">
+      <rect x="1" y="1" width="46" height="46" rx="6" fill="#14704F"/>
+      <path d="M13 37V21a11 11 0 0 1 22 0v16" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M8 37h32" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M19 27.5l3.6 3.6L29.5 24" fill="none" stroke="#FFFFFF" stroke-width="2.6"/>
+    </g>
+    <rect x="296" y="200" width="94" height="9" rx="4.5" fill="#14704F"/>
+    <rect x="312" y="216" width="62" height="7" rx="3.5" fill="#B7DCC8"/>
+
+    <!-- pertanyaan 1 -->
+    <rect x="268" y="244" width="120" height="7" rx="3.5" fill="#8FC5A8"/>
+    <g>
+      <rect x="268" y="260" width="34" height="26" rx="7" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+      <rect x="308" y="260" width="34" height="26" rx="7" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+      <rect x="348" y="260" width="34" height="26" rx="7" fill="#14704F"/>
+      <rect x="388" y="260" width="34" height="26" rx="7" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+      <path d="M358 273l5 5 9-9" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- pertanyaan 2 -->
+    <rect x="268" y="304" width="100" height="7" rx="3.5" fill="#8FC5A8"/>
+    <g>
+      <rect x="268" y="320" width="34" height="26" rx="7" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+      <rect x="308" y="320" width="34" height="26" rx="7" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+      <rect x="348" y="320" width="34" height="26" rx="7" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+      <rect x="388" y="320" width="34" height="26" rx="7" fill="#14704F"/>
+      <path d="M398 333l5 5 9-9" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+
+    <!-- kolom saran -->
+    <rect x="268" y="364" width="154" height="44" rx="9" fill="#FFFFFF" stroke="#CFE6D9" stroke-width="2"/>
+    <rect x="280" y="378" width="96" height="6" rx="3" fill="#D7EDE0"/>
+    <rect x="280" y="391" width="64" height="6" rx="3" fill="#D7EDE0"/>
+
+    <!-- tombol kirim -->
+    <rect x="268" y="424" width="154" height="34" rx="17" fill="#F5B83D"/>
+    <rect x="316" y="437" width="58" height="8" rx="4" fill="#0B3D2E"/>
+  </g>
+
+  <!-- ibu jari dan jari di depan ponsel -->
+  <path d="M236 404c-14-34-8-62 8-70 14-6 28 6 34 28l12 46c-18 14-40 12-54-4z" fill="#F2B48C"/>
+  <g fill="#F2B48C">
+    <rect x="430" y="248" width="62" height="34" rx="17" transform="rotate(-10 461 265)"/>
+    <rect x="436" y="290" width="66" height="34" rx="17" transform="rotate(-10 469 307)"/>
+    <rect x="434" y="332" width="62" height="34" rx="17" transform="rotate(-10 465 349)"/>
+    <rect x="428" y="372" width="54" height="32" rx="16" transform="rotate(-10 455 388)"/>
+  </g>
+  <g fill="#F7C9A8">
+    <rect x="470" y="252" width="16" height="12" rx="6" transform="rotate(-10 478 258)"/>
+    <rect x="478" y="294" width="16" height="12" rx="6" transform="rotate(-10 486 300)"/>
+    <rect x="474" y="336" width="16" height="12" rx="6" transform="rotate(-10 482 342)"/>
+  </g>
+</svg>

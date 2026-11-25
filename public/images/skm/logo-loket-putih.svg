@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-labelledby="t">
+  <title id="t">Lambang e-SKM versi putih</title>
+  <rect x="1" y="1" width="46" height="46" rx="5" fill="#FFFFFF"/>
+  <path d="M13 37V21a11 11 0 0 1 22 0v16" fill="none" stroke="#14704F" stroke-width="3"/>
+  <path d="M8 37h32" stroke="#14704F" stroke-width="3" stroke-linecap="square"/>
+  <path d="M19 27.5l3.6 3.6L29.5 24" fill="none" stroke="#14704F" stroke-width="2.6" stroke-linecap="square"/>
+</svg>

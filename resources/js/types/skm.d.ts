@@ -161,3 +161,79 @@ export interface DashboardStats {
     respondents: number;
     latestScore: number | null;
 }
+
+export interface ServiceTypeItem {
+    id: number;
+    agency_id: number;
+    name: string;
+    is_active: boolean;
+}
+
+export interface PublicPeriodOption {
+    id: number;
+    agency_id: number;
+    label: string;
+    start_date: string;
+    end_date: string;
+    population?: number | null;
+    status: PeriodStatus;
+    respondents_count: number;
+    agency?: Agency | null;
+    service_types?: ServiceTypeItem[];
+}
+
+export interface PublicLatestResult {
+    period_id: number;
+    period_label?: string | null;
+    agency_name?: string | null;
+    respondent_count: number;
+    ikm_weighted: number;
+    ikm_score: number;
+    grade: Grade;
+    performance: string;
+    elements: ElementScore[];
+    calculated_at?: string | null;
+}
+
+export interface PublicPublication {
+    period_id: number;
+    period_label?: string | null;
+    start_date?: string | null;
+    end_date?: string | null;
+    agency_name?: string | null;
+    respondent_count: number;
+    ikm_score: number;
+    grade: Grade;
+    performance: string;
+    elements: ElementScore[];
+    calculated_at?: string | null;
+}
+
+export interface PublicPortalProps {
+    agency: Agency | null;
+    publications?: PublicPublication[];
+    serviceTypes: ServiceTypeItem[];
+    activePeriods: PublicPeriodOption[];
+    latestResult: PublicLatestResult | null;
+    elements: Element[];
+    totalAgencies: number;
+    totalRespondents: number;
+}
+
+export interface QuestionnaireSubmittedSummary {
+    period_id: number;
+    period_label: string;
+    agency_name: string;
+    unit_name?: string | null;
+    service_name: string;
+    respondent_count: number;
+    submitted_at: string;
+}
+
+export interface QuestionnairePageProps {
+    periods: PublicPeriodOption[];
+    elements: Element[];
+    selectedPeriodId: number | null;
+    selectedServiceTypeId: number | null;
+    submittedSummary?: QuestionnaireSubmittedSummary | null;
+}

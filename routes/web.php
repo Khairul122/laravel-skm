@@ -3,12 +3,12 @@
 use App\Http\Controllers\AgencyController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\IkmResultController;
+use App\Http\Controllers\PublicPortalController;
 use App\Http\Controllers\QuickCalculatorController;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SurveyImportController;
 use App\Http\Controllers\SurveyPeriodController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,10 +20,9 @@ use Inertia\Inertia;
 */
 
 // Public routes
-Route::get('/', function () {
-    return Inertia::render('welcome');
-})->name('home');
-
+Route::get('/', [PublicPortalController::class, 'home'])->name('home');
+Route::get('/kuesioner', [PublicPortalController::class, 'questionnaire'])->name('questionnaire.show');
+Route::post('/kuesioner', [PublicPortalController::class, 'storeQuestionnaire'])->name('questionnaire.store');
 Route::get('/kalkulator', [QuickCalculatorController::class, 'show'])->name('calculator');
 Route::post('/kalkulator', [QuickCalculatorController::class, 'calculate'])->name('calculator.calculate');
 Route::get('/panduan', [QuickCalculatorController::class, 'guide'])->name('guide');

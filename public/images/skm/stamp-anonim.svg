@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-labelledby="t">
+  <title id="t">Cap stempel: survei tanpa nama</title>
+  <defs>
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.9 1.25" result="speckle"/>
+      <feComposite in="SourceGraphic" in2="speckle" operator="in" result="inked"/>
+      <feTurbulence type="turbulence" baseFrequency="0.035" numOctaves="1" seed="3" result="warp"/>
+      <feDisplacementMap in="inked" in2="warp" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <path id="ring" d="M80,80 m-52,0 a52,52 0 1,1 104,0 a52,52 0 1,1 -104,0"/>
+  </defs>
+  <g filter="url(#ink)" fill="none" stroke="#B3261E" transform="rotate(-9 80 80)">
+    <circle cx="80" cy="80" r="70" stroke-width="3.2"/>
+    <circle cx="80" cy="80" r="64" stroke-width="1.2"/>
+    <circle cx="80" cy="80" r="38" stroke-width="1.2"/>
+    <text fill="#B3261E" stroke="none" font-family="Arial Narrow, Arial, Helvetica, sans-serif" font-weight="700" font-size="11.5" letter-spacing="1.2">
+      <textPath href="#ring" startOffset="0">SURVEI KEPUASAN MASYARAKAT  ·  e-SKM  ·</textPath>
+    </text>
+    <rect x="30" y="70" width="100" height="21" fill="#FFFDF8" stroke-width="2.4"/>
+    <text x="80" y="86" text-anchor="middle" fill="#B3261E" stroke="none" font-family="Arial Narrow, Arial, Helvetica, sans-serif" font-weight="700" font-size="15" letter-spacing="1.5">TANPA NAMA</text>
+    <text x="80" y="62" text-anchor="middle" fill="#B3261E" stroke="none" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9">ANONIM</text>
+    <text x="80" y="106" text-anchor="middle" fill="#B3261E" stroke="none" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="9">TANPA NIK</text>
+  </g>
+</svg>

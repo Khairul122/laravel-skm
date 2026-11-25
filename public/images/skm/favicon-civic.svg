@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Ikon Portal e-SKM">
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#0F4C3A"/>
+  <rect x="8" y="8" width="48" height="48" rx="12" stroke="#FDE68A" stroke-opacity="0.5" stroke-width="1.5"/>
+  <path d="M32 14L47 20V31.5C47 40.5 40.3 47.7 32 50.5C23.7 47.7 17 40.5 17 31.5V20L32 14Z" fill="#0B392B" stroke="#FDE68A" stroke-width="2"/>
+  <path d="M25.5 32L30 36.5L39 26.5" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

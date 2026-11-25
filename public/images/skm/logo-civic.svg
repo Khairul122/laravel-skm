@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Lambang Portal e-SKM">
+  <defs>
+    <linearGradient id="civicSealGrad" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#145A45"/>
+      <stop offset="100%" stop-color="#0A3528"/>
+    </linearGradient>
+    <linearGradient id="civicBrassGrad" x1="16" y1="14" x2="48" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF3C7"/>
+      <stop offset="55%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#civicSealGrad)"/>
+  <rect x="7.5" y="7.5" width="49" height="49" rx="12.5" stroke="url(#civicBrassGrad)" stroke-opacity="0.55" stroke-width="1.25"/>
+  <path d="M32 13L48 19.5V31.8C48 41.4 41 48.6 32 51.5C23 48.6 16 41.4 16 31.8V19.5L32 13Z" fill="#0B392B" stroke="url(#civicBrassGrad)" stroke-width="1.75"/>
+  <path d="M22.5 38.5V29.5C22.5 24.25 26.75 20 32 20C37.25 20 41.5 24.25 41.5 29.5V38.5" stroke="#FDE68A" stroke-opacity="0.55" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M21 39.5H43" stroke="#FDE68A" stroke-opacity="0.7" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M26.5 31.5L30.5 35.5L38 26.5" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="17.2" r="1.4" fill="#FDE68A"/>
+</svg>
